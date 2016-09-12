@@ -9,7 +9,11 @@ To load this live example on your local machine, do the following:
 - run `npm install`
 - run `npm start`
 
+### Deployment
+An example of this project is hosted on Heroku at the following url: [https://global-save-button-example.herokuapp.com/](https://global-save-button-example.herokuapp.com/)
 
+To deploy this app, run the following:
+`git push heroku master`
 
 
 
