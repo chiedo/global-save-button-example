@@ -88,7 +88,9 @@ export function saveAll() {
     // iterate through clicker and fire its _save callback method
     clickers.forEach(clicker => {
       // fire save method but pass false to reloadBalanceSheet
-      clicker.saveCallback(false);
+      if (clicker.saveCallback) {
+        clicker.saveCallback(false);
+      }
     });
   };
 }
