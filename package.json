@@ -92,5 +92,6 @@
     ],
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$"
-  }
+  },
+  "homepage": "https://global-save-button-example.herokuapp.com/"
 }
