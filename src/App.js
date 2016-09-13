@@ -7,6 +7,7 @@ import DevTools from './components/DevTools';
 import TotalClicks from './components/TotalClicks';
 import Clickers from './components/Clickers';
 import SaveAllBar from './components/SaveAllBar';
+import Footer from './components/Footer';
 
 // assets
 import logo from './assets/logo.svg';
@@ -23,11 +24,16 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>React + Redux: updating internal state across many components at once</h2>
         </div>
-        <p className="App-intro container">
-          Click on boxes below to set local clicker state. Saving one clicker updates global state. Pressing the `SAVE ALL` button fires all clickers' `_save` methods.
-        </p>
+        <div className="container instructions">
+          <h4><strong>Instructions</strong></h4>
+          <ul>
+            <li>Click on boxes below. Save to update global state.</li>
+            <li>Click the <code>SAVE ALL</code> button to save all unsaved changes.</li>
+          </ul>
+        </div>
         <TotalClicks />
         <Clickers />
+        <Footer />
         <SaveAllBar />
         <DevTools key="devtools" />
       </div>

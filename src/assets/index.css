@@ -2,10 +2,15 @@ body {
   margin: 0;
   padding: 0;
   padding-right: 30%;
-  padding-bottom: 100px;
   font-family: sans-serif;
 }
 
+footer { padding: 100px 0; }
+
+/**
+ * INSTRUCTIONS
+ */
+.instructions ul { display: inline-block; text-align: left; }
 
 /**
  * TOTAL CLICKS BAR
@@ -19,7 +24,7 @@ body {
  * CLICKERS
  */
 .clickers { margin-top: 10px; }
-.clicker { position: relative; padding: 100px 50px; margin: 15px 0; background: #79B7D4; }
+.clicker { position: relative; padding: 100px 50px; margin: 15px 0; background: #79B7D4; cursor: pointer; }
 .clicker:hover { background: #458cad; }
 .clicker.changes-present { background: #ffc267; }
 .clicker.changes-present:hover { background: #eca437; }

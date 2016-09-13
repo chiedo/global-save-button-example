@@ -37,8 +37,7 @@ export default (state = initialState, action) => {
     case constants.CLICKS_SAVED:
       x = state.clickers.map((clicker) => {
         if (clicker.id === action.payload.id) {
-          const clicks = clicker.clicks + action.payload.clicks;
-          return { ...clicker, clicks };
+          return { ...clicker, clicks: action.payload.clicks };
         } else {
           return clicker;
         }
@@ -51,8 +50,7 @@ export default (state = initialState, action) => {
     case constants.CLICKER_HAS_CHANGED:
       x = state.clickers.map((clicker) => {
         if (clicker.id === action.payload.id) {
-          const hasChanged = action.payload.hasChanged;
-          return { ...clicker, hasChanged };
+          return { ...clicker, hasChanged: action.payload.hasChanged };
         } else {
           return clicker;
         }
