@@ -37,7 +37,8 @@ export default (state = initialState, action) => {
     case constants.CLICKS_SAVED:
       x = state.clickers.map((clicker) => {
         if (clicker.id === action.payload.id) {
-          return { ...clicker, clicks: action.payload.clicks };
+          const clicks = clicker.clicks + action.payload.clicks;
+          return { ...clicker, clicks };
         } else {
           return clicker;
         }
